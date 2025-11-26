@@ -406,6 +406,38 @@ public class MightyMinerConfig extends Config {
             subcategory = "Mithril Macro"
     )
     public static boolean mineTitanium = true;
+    
+    @Number(
+            name = "Default Priority - Gray Mithril",
+            category = MINING_MACRO,
+            subcategory = "Mithril Priority",
+            min = 0, max = 30
+    )
+    public static int mithrilPriorityGrayDefault = 1;
+
+    @Number(
+            name = "Default Priority - Green Mithril",
+            category = MINING_MACRO,
+            subcategory = "Mithril Priority",
+            min = 0, max = 30
+    )
+    public static int mithrilPriorityGreenDefault = 3;
+
+    @Number(
+            name = "Default Priority - Blue Mithril",
+            category = MINING_MACRO,
+            subcategory = "Mithril Priority",
+            min = 0, max = 30
+    )
+    public static int mithrilPriorityBlueDefault = 6;
+
+    @Number(
+            name = "Default Priority - Titanium",
+            category = MINING_MACRO,
+            subcategory = "Mithril Priority",
+            min = 0, max = 30
+    )
+    public static int mithrilPriorityTitaniumDefault = 10;
 
     //</editor-fold>
 

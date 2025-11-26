@@ -200,13 +200,12 @@ public class MiningMacro extends AbstractMacro {
     private int[] determinePriority() {
         if (MightyMinerConfig.oreType == 0) {
             return new int[]{
-                    MightyMinerConfig.mineGrayMithril ? 1 : 0,
-                    MightyMinerConfig.mineGreenMithril ? 1 : 0,
-                    MightyMinerConfig.mineBlueMithril ? 1 : 0,
-                    MightyMinerConfig.mineTitanium ? 10 : 0
+                    MightyMinerConfig.mineGrayMithril ? MightyMinerConfig.mithrilPriorityGrayDefault : 0,
+                    MightyMinerConfig.mineGreenMithril ? MightyMinerConfig.mithrilPriorityGreenDefault : 0,
+                    MightyMinerConfig.mineBlueMithril ? MightyMinerConfig.mithrilPriorityBlueDefault : 0,
+                    MightyMinerConfig.mineTitanium ? MightyMinerConfig.mithrilPriorityTitaniumDefault : 0
             };
         }
         return new int[]{1, 1, 1, 1};
     }
-
 }
